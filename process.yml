@@ -1,0 +1,19 @@
+apps:
+  - script: dist/index.js
+    name: lira
+    instances: 1
+    exec_mode: cluster
+    watch: true
+    env:
+      NODE_ENV: development
+      PORT: 3001
+      UTU_SECRET: 1a160f4360ff488d9f4a0daa31a9cbb2
+      DS: 33fa234a05b34c3ab6edea84ce302a5b
+      MICROSOFT_APP_ID: b31bc336-6779-4c82-87fe-610e3118d446
+      MICROSOFT_APP_PASSWORD: jUMYTmhwwkM3pHe0KVmD47S
+    env_production:
+      NODE_ENV: production
+      PORT: 3001
+      UTU_SECRET: 33fa234a05b34c3ab6edea84ce302a5b
+      MICROSOFT_APP_ID: b31bc336-6779-4c82-87fe-610e3118d446
+      MICROSOFT_APP_PASSWORD: jUMYTmhwwkM3pHe0KVmD47S
